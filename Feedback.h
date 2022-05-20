@@ -1,0 +1,25 @@
+#include "Payment.h"
+#include "PetProduct.h"
+#include "RegisteredUser.h"
+#include "Report.h"
+#include "Service.h"
+#include "Staff.h"
+#include "User.h"
+#pragma once
+#include <string>
+#define SIZE1 20
+#define SIZE2 10
+using namespace std;
+
+class Feedback
+{
+private:
+	int feedbackNo;
+	string feedbackDescr;
+	string cusName;
+public:
+	Feedback(int fNo, string fDescr, string cName);
+	void feedbackDetails();
+	void viewFeedbackDetails();
+	~Feedback();
+};
